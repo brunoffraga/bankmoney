@@ -44,8 +44,9 @@ public class Cliente{
         this.ativo = true;
     }
 
-    public void atualizacaoInformacao(DadosAtualizacaoCliente dados) {
+    public void atualizacao(DadosAtualizacaoCliente dados) {
         this.nome = dados.nome();
+        this.cpf = dados.cpf();
     }
 
     public void excluir(Long id) {

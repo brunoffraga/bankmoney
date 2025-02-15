@@ -5,5 +5,5 @@ public record DadosListagemGerente(Long id, String nome, String email, String se
     public DadosListagemGerente(Gerente gerente){
         this(gerente.getId(), gerente.getNome(), gerente.getEmail(), gerente.getSenha());
     }
-    
+
 }

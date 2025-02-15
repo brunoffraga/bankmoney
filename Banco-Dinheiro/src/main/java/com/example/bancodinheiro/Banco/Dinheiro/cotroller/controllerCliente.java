@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.ClienteRepository;
 import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.DadosDetalhamentoAtualizadoCliente;
 import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.DadosListagemCliente;
-import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.RepositoryCliente;
 
 
 /*
@@ -26,7 +26,7 @@ import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.RepositoryCliente
 public class controllerCliente {
 
     @Autowired
-    private RepositoryCliente repository;
+    private ClienteRepository repository;
 
 /* 
     @PostMapping

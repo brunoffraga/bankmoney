@@ -13,9 +13,8 @@ public record DadosAtualizacaoCliente(
     String nome,
 
     @Email
-    String email,
+    String cpf
 
-    Double saldo
     ) {
 
 }

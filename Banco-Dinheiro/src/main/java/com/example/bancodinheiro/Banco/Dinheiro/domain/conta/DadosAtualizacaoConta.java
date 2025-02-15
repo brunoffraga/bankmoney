@@ -9,6 +9,9 @@ import jakarta.validation.constraints.NotNull;
 
 public record DadosAtualizacaoConta(
 
+    @NotNull
+    Long id,
+
     @NotBlank
     @Email
     String email,
@@ -19,6 +22,7 @@ public record DadosAtualizacaoConta(
     @NotNull
     @Valid
     DadosAtualizacaoCliente cliente
+    
 ) {
 
 }

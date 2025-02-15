@@ -25,7 +25,7 @@ public class Gerente {
     private String nome;
     private String email;
     private String senha;
-    private Boolean ativo;
+    private Boolean ativo = true;
 
     public Gerente(DadosCadastroGerente dados) {
         this.ativo = true;
@@ -35,18 +35,17 @@ public class Gerente {
     }
 
     public void atualizacao(DadosAtualizacaoGerente dados) {
-        this.ativo = true;
         this.nome = dados.nome();
         this.email = dados.email();
         this.senha = dados.senha();
     }
 
-    public void ativar(Long id) {
-        this.ativo = true;
+    public void excluir(Long id) {
+        this.ativo = false;
     }
 
-    public void excluir(Long id){
-        this.ativo = false;
+    public void ativar(Long id) {
+        this.ativo = true;
     }
     
 }
