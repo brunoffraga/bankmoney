@@ -23,7 +23,7 @@ import com.example.bancodinheiro.Banco.Dinheiro.domain.cliente.DadosListagemClie
 
 @RestController
 @RequestMapping("cliente")
-public class controllerCliente {
+public class ControllerCliente {
 
     @Autowired
     private ClienteRepository repository;

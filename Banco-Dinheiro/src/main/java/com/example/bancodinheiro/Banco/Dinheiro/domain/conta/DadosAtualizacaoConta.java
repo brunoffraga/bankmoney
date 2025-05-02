@@ -20,6 +20,12 @@ public record DadosAtualizacaoConta(
     String senha,
 
     @NotNull
+    Double saldo,
+    
+    @NotNull
+    TipoConta tipoconta,
+
+    @NotNull
     @Valid
     DadosAtualizacaoCliente cliente
     

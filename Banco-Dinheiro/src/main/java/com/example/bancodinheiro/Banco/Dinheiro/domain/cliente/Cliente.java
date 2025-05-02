@@ -35,6 +35,11 @@ public class Cliente{
     private String cpf;
     private boolean ativo = true;
 
+    /*
+     * TODO: Implementar pessoa
+     * TODO: Dentro de pessoa colocar pessoa fisica ou juridica
+     */
+
     @OneToOne(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private Conta conta;
 
@@ -51,12 +56,10 @@ public class Cliente{
 
     public void excluir(Long id) {
         this.ativo = false;
-        this.conta.excluir(id);
     }
 
     public void ativar(Long id) {
         this.ativo = true;
-        this.conta.ativar(id);
     }
     
 }

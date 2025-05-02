@@ -20,6 +20,9 @@ public record DadosCadastroConta(
     double saldo,
 
     @NotNull
+    TipoConta tipoconta,
+
+    @NotNull
     @Valid
     DadosCadastroCliente cliente
 

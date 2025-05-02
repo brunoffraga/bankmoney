@@ -27,7 +27,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("gerente")
-public class controllerGerente {
+public class ControllerGerente {
     
     @Autowired
     private GerenteRepository repository;
