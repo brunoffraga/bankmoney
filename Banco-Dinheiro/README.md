@@ -16,6 +16,8 @@ Link do meu
     - [x] Criar gerente de conta bancária
     - [x] Criar cartão bancária
     - [x] Consultar saldo
+    - [] swagger
+    - [] Endereço com o viacep
     - [] Criar pessoas fisica e bancaria
     - [] Realizar depósitos
     - [] Realizar saques
@@ -26,6 +28,7 @@ Link do meu
     - [] logs da gerente
     - [] conta não consegue abrir outra conta
     - [] conta não editar conta se gerente não aprovar
+
 ```
 
 ## 🛠️ Tecnologias Utilizadas
